@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalam Shar | GHL Entry Level Expert</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Kalam | GHL Entry‑Level Expert & Automation Intern</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <style>
         :root {
             --primary-color: #6c63ff;
@@ -18,440 +18,153 @@
             --dark-color: #2f2e41;
             --accent-color: #4d4dff;
         }
-        
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             color: var(--dark-color);
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
         .navbar {
-            background-color: white;
+            background-color: #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             padding: 15px 0;
             transition: all 0.3s ease;
         }
-        
         .navbar.scrolled {
             padding: 10px 0;
             background-color: rgba(255, 255, 255, 0.95);
         }
-        
         .navbar-brand {
             font-weight: 700;
             color: var(--primary-color);
         }
-        
         .nav-link {
             font-weight: 500;
             margin: 0 10px;
             color: var(--dark-color);
         }
-        
-        .nav-link:hover {
-            color: var(--primary-color);
-        }
-        
+        .nav-link:hover { color: var(--primary-color); }
         .hero {
             background: linear-gradient(135deg, #f5f7fa 0%, #e6e9f2 100%);
             padding: 150px 0 100px;
             text-align: center;
         }
-        
-        .hero h1 {
-            font-weight: 700;
-            margin-bottom: 20px;
-            font-size: 3rem;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #555;
-        }
-        
+        .hero h1 { font-weight: 700; margin-bottom: 20px; font-size: 3rem; }
+        .hero p { font-size: 1.15rem; max-width: 820px; margin: 0 auto 30px; color: #555; }
         .btn-primary {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
-            padding: 12px 30px;
-            font-weight: 500;
-            border-radius: 50px;
+            padding: 12px 30px; font-weight: 500; border-radius: 50px;
         }
-        
-        .btn-primary:hover {
-            background-color: #5a52e0;
-            border-color: #5a52e0;
-            transform: translateY(-2px);
-        }
-        
+        .btn-primary:hover { background-color: #5a52e0; border-color: #5a52e0; transform: translateY(-2px); }
         .btn-outline-primary {
-            color: var(--primary-color);
-            border-color: var(--primary-color);
-            padding: 12px 30px;
-            font-weight: 500;
-            border-radius: 50px;
+            color: var(--primary-color); border-color: var(--primary-color);
+            padding: 12px 30px; font-weight: 500; border-radius: 50px;
         }
-        
-        .btn-outline-primary:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transform: translateY(-2px);
-        }
-        
-        section {
-            padding: 100px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .section-title h2 {
-            font-weight: 700;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 15px;
-        }
-        
+        .btn-outline-primary:hover { background-color: var(--primary-color); color: #fff; transform: translateY(-2px); }
+        section { padding: 100px 0; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-weight: 700; position: relative; display: inline-block; padding-bottom: 15px; }
         .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--primary-color);
+            content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 3px; background-color: var(--primary-color);
         }
-        
-        .about-content {
-            display: flex;
-            align-items: center;
-        }
-        
+        .about-content { display: flex; align-items: center; }
         .about-img {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            border: 5px solid white;
+            border-radius: 15px; overflow: hidden; box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); border: 5px solid #fff;
         }
-        
-        .about-img img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.5s ease;
-        }
-        
-        .about-img:hover img {
-            transform: scale(1.05);
-        }
-        
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 20px;
-        }
-        
+        .about-img img { width: 100%; height: auto; transition: transform 0.5s ease; }
+        .about-img:hover img { transform: scale(1.05); }
+        .skills-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
         .skill-card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
+            background: #fff; border-radius: 10px; padding: 20px; text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); transition: all 0.3s ease;
         }
-        
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .skill-icon {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-        
+        .skill-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
+        .skill-icon { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 10px; }
         .experience-card {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-            transition: all 0.3s ease;
+            background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px; transition: all 0.3s ease;
         }
-        
-        .experience-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
+        .experience-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         .project-card {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background: white;
+            border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; background: #fff;
         }
-        
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-        
-        .project-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .project-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .project-card:hover .project-img img {
-            transform: scale(1.1);
-        }
-        
-        .project-body {
-            padding: 25px;
-        }
-        
-        .project-title {
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .project-links a {
-            margin-right: 15px;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .project-links a:hover {
-            text-decoration: underline;
-        }
-        
-        .tech-badge {
-            display: inline-block;
-            background-color: #f0f0ff;
-            color: var(--primary-color);
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-right: 8px;
-            margin-bottom: 8px;
-        }
-        
-        .contact-form .form-control {
-            height: 50px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            border: 1px solid #ddd;
-            padding: 15px;
-        }
-        
-        .contact-form textarea.form-control {
-            height: 150px;
-            resize: none;
-        }
-        
-        .contact-info {
-            margin-bottom: 30px;
-        }
-        
-        .contact-icon {
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-right: 15px;
-            width: 40px;
-            text-align: center;
-        }
-        
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 40px 0 20px;
-            text-align: center;
-        }
-        
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .project-img { height: 200px; overflow: hidden; }
+        .project-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .project-card:hover .project-img img { transform: scale(1.08); }
+        .project-body { padding: 25px; }
+        .project-title { font-weight: 600; margin-bottom: 15px; }
+        .project-links a { margin-right: 15px; color: var(--primary-color); text-decoration: none; font-weight: 500; }
+        .project-links a:hover { text-decoration: underline; }
+        .tech-badge { display: inline-block; background-color: #f0f0ff; color: var(--primary-color); padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 8px; margin-bottom: 8px; }
+        .contact-form .form-control { height: 50px; margin-bottom: 20px; border-radius: 10px; border: 1px solid #ddd; padding: 15px; }
+        .contact-form textarea.form-control { height: 150px; resize: none; }
+        .contact-info { margin-bottom: 30px; }
+        .contact-icon { font-size: 1.5rem; color: var(--primary-color); margin-right: 15px; width: 40px; text-align: center; }
+        footer { background-color: var(--secondary-color); color: #fff; padding: 40px 0 20px; text-align: center; }
         .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            margin: 0 10px;
-            transition: all 0.3s ease;
+            display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+            background-color: rgba(255, 255, 255, 0.1); color: #fff; border-radius: 50%; font-size: 1.2rem; margin: 0 10px; transition: all 0.3s ease;
         }
-        
-        .social-links a:hover {
-            background-color: var(--primary-color);
-            color: white;
-            transform: translateY(-3px);
-        }
-        
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 1s ease forwards;
-        }
-        
+        .social-links a:hover { background-color: var(--primary-color); color: #fff; transform: translateY(-3px); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+        .fade-in { opacity: 0; animation: fadeIn 1s ease forwards; }
         .delay-1 { animation-delay: 0.2s; }
         .delay-2 { animation-delay: 0.4s; }
         .delay-3 { animation-delay: 0.6s; }
-        
-        /* Dark mode toggle */
-        .dark-mode {
-            background-color: #121212;
-            color: #f5f5f5;
-        }
-        
-        .dark-mode .navbar {
-            background-color: #1e1e1e;
-        }
-        
-        .dark-mode .navbar.scrolled {
-            background-color: rgba(30, 30, 30, 0.95);
-        }
-        
-        .dark-mode .nav-link {
-            color: #f5f5f5;
-        }
-        
-        .dark-mode .hero {
-            background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
-            color: #f5f5f5;
-        }
-        
-        .dark-mode .hero p {
-            color: #ddd;
-        }
-        
-        .dark-mode .skill-card,
-        .dark-mode .experience-card,
-        .dark-mode .project-card {
-            background-color: #1e1e1e;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            color: #f5f5f5;
-        }
-        
-        .dark-mode .project-card:hover,
-        .dark-mode .experience-card:hover {
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-        }
-        
-        .dark-mode .form-control {
-            background-color: #2d2d2d;
-            border-color: #444;
-            color: #f5f5f5;
-        }
-        
-        .dark-mode .tech-badge {
-            background-color: #333;
-            color: #f5f5f5;
-        }
-        
-        .dark-mode-toggle {
-            cursor: pointer;
-            font-size: 1.2rem;
-            margin-left: 15px;
-        }
-        
-        /* Back to top button */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 999;
-        }
-        
-        .back-to-top.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .back-to-top:hover {
-            background-color: #5a52e0;
-            transform: translateY(-3px);
-        }
+        /* Dark mode */
+        .dark-mode { background-color: #121212; color: #f5f5f5; }
+        .dark-mode .navbar { background-color: #1e1e1e; }
+        .dark-mode .navbar.scrolled { background-color: rgba(30,30,30,0.95); }
+        .dark-mode .nav-link { color: #f5f5f5; }
+        .dark-mode .hero { background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%); color: #f5f5f5; }
+        .dark-mode .hero p { color: #ddd; }
+        .dark-mode .skill-card, .dark-mode .experience-card, .dark-mode .project-card { background-color: #1e1e1e; box-shadow: 0 5px 15px rgba(0,0,0,0.3); color: #f5f5f5; }
+        .dark-mode .form-control { background-color: #2d2d2d; border-color: #444; color: #f5f5f5; }
+        .dark-mode .tech-badge { background-color: #333; color: #f5f5f5; }
+        .dark-mode-toggle { cursor: pointer; font-size: 1.2rem; margin-left: 15px; }
+        /* Back to top */
+        .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background-color: var(--primary-color); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 999; }
+        .back-to-top.active { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background-color: #5a52e0; transform: translateY(-3px); }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Abdul Kalam</a>
+            <a class="navbar-brand" href="#">Abdul Kalam | GHL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <span class="dark-mode-toggle nav-link" id="darkModeToggle">
-                            <i class="fas fa-moon"></i>
-                        </span>
+                        <span class="dark-mode-toggle nav-link" id="darkModeToggle"><i class="fas fa-moon"></i></span>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
+                <div class="col-lg-9 text-center">
                     <h1 class="fade-in">Hi, I'm Abdul Kalam 👋</h1>
-                    <p class="fade-in delay-1">Full Stack Developer | AI Enthusiast | Prompt Engineer</p>
+                    <p class="fade-in delay-1">GHL (GoHighLevel) Entry‑Level Expert • CRM Automation • Funnels & Integrations • Zapier/Make • Calendars • Pipelines</p>
                     <div class="fade-in delay-2">
-                        <a href="#projects" class="btn btn-primary me-3">View My Work</a>
+                        <a href="#projects" class="btn btn-primary me-3">View My GHL Work</a>
                         <a href="https://drive.google.com/file/d/1OQvvtM5esPuXeAtS8kN-RPkWqdUvTL_a/view?usp=sharing" class="btn btn-outline-primary">Download Resume</a>
                     </div>
                 </div>
@@ -459,22 +172,24 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
+            <div class="section-title"><h2>About Me</h2></div>
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
                     <div class="about-img">
-                        <img src="k.jpeg" alt="Kalam Shar" class="img-fluid">
+                        <img src="k.jpeg" alt="Abdul Kalam" class="img-fluid" />
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <h3>Full Stack Developer & AI Enthusiast</h3>
-                    <p>I'm a Full Stack Developer and AI enthusiast with hands-on experience in PHP, React, MySQL, and Firebase. I also work with Prompt Engineering and Generative AI tools like GPT and LangChain. I build scalable web apps and intelligent systems focused on automation and user experience.</p>
-                    <p>My journey in technology began with a curiosity about how things work, which evolved into a passion for creating solutions that make a difference. I'm constantly learning and expanding my skill set to stay at the forefront of web development and AI technologies.</p>
+                    <h3>GHL Entry‑Level Expert & Automation Intern</h3>
+                    <p>
+                        I specialize in setting up and optimizing GoHighLevel (GHL) for small businesses and agencies. Since <strong>June 2, 2025</strong>, I've been an <strong>Automation Intern at Brainstorm Solutions</strong>, focusing on end‑to‑end CRM setups—funnels, pipelines, calendars, forms/surveys, email/SMS, and smart workflows.
+                    </p>
+                    <p>
+                        I work across niches including <strong>Real Estate</strong> and <strong>Fitness</strong>, integrating tools like <strong>Stripe, Twilio/JustCall, Zoom, Calendly, Google Sheets</strong>, and notifications (e.g., <strong>Pumble</strong>). I also use <strong>Zapier</strong> and <strong>Make</strong> for custom automations and webhook‑based integrations.
+                    </p>
                     <div class="mt-4">
                         <a href="https://www.linkedin.com/in/abdul-kalam-205579371/" class="btn btn-primary me-3" target="_blank"><i class="fab fa-linkedin me-2"></i>Connect on LinkedIn</a>
                         <a href="mailto:kalamshar786@gmail.com" class="btn btn-outline-primary"><i class="fas fa-envelope me-2"></i>Email Me</a>
@@ -484,131 +199,58 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="py-5 bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-            </div>
+            <div class="section-title"><h2>My Skills</h2></div>
             <div class="skills-container">
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-php"></i>
-                    </div>
-                    <h5>PHP</h5>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h5>React.js</h5>
-                </div>
-                <div class="skill-card fade-in delay-2">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h5>MySQL</h5>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h5>Firebase</h5>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h5>JavaScript</h5>
-                </div>
-                <div class="skill-card fade-in delay-2">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h5>HTML5</h5>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h5>CSS3</h5>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fab fa-bootstrap"></i>
-                    </div>
-                    <h5>Bootstrap</h5>
-                </div>
-                <div class="skill-card fade-in delay-2">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h5>Python</h5>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h5>Git & GitHub</h5>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h5>Prompt Engineering</h5>
-                </div>
-                <div class="skill-card fade-in delay-2">
-                    <div class="skill-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h5>Generative AI</h5>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h5>LangChain</h5>
-                </div>
-                <div class="skill-card fade-in delay-1">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h5>OpenAI APIs</h5>
-                </div>
-                <div class="skill-card fade-in delay-2">
-                    <div class="skill-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h5>RESTful APIs</h5>
-                </div>
-                <div class="skill-card fade-in">
-                    <div class="skill-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h5>Responsive Design</h5>
-                </div>
+                <!-- GHL & CRM -->
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div><h5>GoHighLevel (GHL)</h5></div>
+                <div class="skill-card fade-in delay-1"><div class="skill-icon"><i class="fa-solid fa-gears"></i></div><h5>Workflows & Triggers</h5></div>
+                <div class="skill-card fade-in delay-2"><div class="skill-icon"><i class="fa-solid fa-timeline"></i></div><h5>Pipelines & Stages</h5></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fa-regular fa-calendar"></i></div><h5>Calendars & Booking</h5></div>
+                <div class="skill-card fade-in delay-1"><div class="skill-icon"><i class="fa-regular fa-rectangle-list"></i></div><h5>Forms & Surveys</h5></div>
+                <div class="skill-card fade-in delay-2"><div class="skill-icon"><i class="fa-solid fa-envelope"></i></div><h5>Email/SMS Campaigns</h5></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fa-solid fa-funnel-dollar"></i></div><h5>Funnels & Websites</h5></div>
+                <div class="skill-card fade-in delay-1"><div class="skill-icon"><i class="fa-solid fa-plug"></i></div><h5>Integrations (Stripe, Twilio, Zoom, Calendly)</h5></div>
+                <div class="skill-card fade-in delay-2"><div class="skill-icon"><i class="fa-brands fa-google"></i></div><h5>Google Sheets Sync</h5></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fa-brands fa-telegram"></i></div><h5>Pumble/Slack Alerts</h5></div>
+                <!-- Automation -->
+                <div class="skill-card fade-in delay-1"><div class="skill-icon"><i class="fa-brands fa-zap"></i></div><h5>Zapier</h5></div>
+                <div class="skill-card fade-in delay-2"><div class="skill-icon"><i class="fa-solid fa-diagram-next"></i></div><h5>Make (Integromat)</h5></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fa-solid fa-link"></i></div><h5>Webhooks & APIs (Basics)</h5></div>
+                <!-- Dev basics kept short -->
+                <div class="skill-card fade-in delay-1"><div class="skill-icon"><i class="fab fa-php"></i></div><h5>PHP (Basics)</h5></div>
+                <div class="skill-card fade-in delay-2"><div class="skill-icon"><i class="fab fa-react"></i></div><h5>React (Basics)</h5></div>
+                <div class="skill-card fade-in"><div class="skill-icon"><i class="fas fa-database"></i></div><h5>MySQL</h5></div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience -->
     <section id="experience" class="py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>My Experience</h2>
-            </div>
+            <div class="section-title"><h2>My Experience</h2></div>
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-9 mx-auto">
+                    <div class="experience-card fade-in">
+                        <h3>Automation Intern (GHL)</h3>
+                        <h5 class="text-primary">Brainstorm Solutions · Internship</h5>
+                        <p class="text-muted mb-4">June 2, 2025 – Present · Remote</p>
+                        <ul>
+                            <li>End‑to‑end GHL account setups: sub‑accounts, domains, SMTP, phone numbers, calendars, forms/surveys, pipelines, and permissions.</li>
+                            <li>Built lead capture funnels and booking flows for Real Estate & Fitness niches with confirmation and reminder automations.</li>
+                            <li>Integrated Stripe, Twilio/JustCall, Zoom, and Calendly; synced contacts and deals to Google Sheets; Pumble/Email notifications.</li>
+                            <li>Created reusable workflow templates (tags, opportunities, call disposition, no‑show follow‑ups, nurture sequences).</li>
+                        </ul>
+                    </div>
                     <div class="experience-card fade-in">
                         <h3>Frontend Developer Intern</h3>
                         <h5 class="text-primary">Softlogi · 3 Months (Onsite)</h5>
-                        <p class="text-muted mb-4">June 2023 - August 2023</p>
+                        <p class="text-muted mb-4">June 2023 – August 2023</p>
                         <ul>
-                            <li>Worked on responsive UI design using HTML, CSS, Bootstrap, and JavaScript</li>
-                            <li>Collaborated in an Agile team environment to deliver frontend components</li>
-                            <li>Gained hands-on experience with real-world frontend workflows and Git version control</li>
-                            <li>Participated in code reviews and debugging sessions</li>
-                            <li>Implemented UI improvements that increased user engagement by 15%</li>
+                            <li>Worked on responsive UI using HTML, CSS, Bootstrap, and JavaScript in an Agile team.</li>
+                            <li>Participated in code reviews, debugging, and Git workflows.</li>
                         </ul>
                     </div>
                 </div>
@@ -616,77 +258,76 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects (GHL‑focused) -->
     <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-            </div>
+            <div class="section-title"><h2>My Projects (GHL)</h2></div>
             <div class="row">
-                <!-- Project 1 -->
+                <!-- Project 1: Real Estate Agent Account Setup -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="project-card fade-in">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="House Price Prediction">
+                            <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=1470&auto=format&fit=crop" alt="Real Estate GHL Setup" />
                         </div>
                         <div class="project-body">
-                            <h5 class="project-title">House Price Prediction (ML)</h5>
-                            <p>Built a regression model to predict house prices using Scikit-learn, achieving 85%+ accuracy. Performed data preprocessing, EDA, and deployed using Streamlit.</p>
+                            <h5 class="project-title">Real Estate Agent — Full GHL Account Setup</h5>
+                            <p>Created sub‑account, custom domains, calendars, pipelines, forms/surveys; built lead capture funnel with automated SMS/email follow‑ups and appointment reminders.</p>
                             <div class="mb-3">
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">Pandas</span>
-                                <span class="tech-badge">Scikit-learn</span>
-                                <span class="tech-badge">Streamlit</span>
+                                <span class="tech-badge">GHL</span>
+                                <span class="tech-badge">Workflows</span>
+                                <span class="tech-badge">Calendars</span>
+                                <span class="tech-badge">Pipelines</span>
+                                <span class="tech-badge">Zapier</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="_blank"><i class="fab fa-github me-1"></i> Code</a>
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fas fa-file-alt me-1"></i> Case Study</a>
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt me-1"></i> Preview</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
+                <!-- Project 2: Funnel + Account Setup (Generic) -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="project-card fade-in delay-1">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Employee Management System">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop" alt="GHL Funnel Setup" />
                         </div>
                         <div class="project-body">
-                            <h5 class="project-title">Employee Management System</h5>
-                            <p>A full-stack web app with authentication and CRUD operations for employee data. Built with PHP and MySQL, styled using Bootstrap for a clean UI.</p>
+                            <h5 class="project-title">Lead Gen Funnel + Account Setup</h5>
+                            <p>Built a multi‑step funnel (opt‑in → thank‑you → booking) with UTM tracking, opportunity stages, and nurture workflows triggered by tags and call dispositions.</p>
                             <div class="mb-3">
-                                <span class="tech-badge">PHP</span>
-                                <span class="tech-badge">MySQL</span>
-                                <span class="tech-badge">Bootstrap</span>
-                                <span class="tech-badge">HTML/CSS</span>
+                                <span class="tech-badge">GHL</span>
+                                <span class="tech-badge">Funnels</span>
+                                <span class="tech-badge">Email/SMS</span>
+                                <span class="tech-badge">Make</span>
+                                <span class="tech-badge">Webhooks</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="_blank"><i class="fab fa-github me-1"></i> Code</a>
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fas fa-file-alt me-1"></i> Case Study</a>
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt me-1"></i> Preview</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Project 3 -->
+                <!-- Project 3: Everything Fitness Implementation -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="project-card fade-in delay-2">
                         <div class="project-img">
-                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fake Job Detector">
+                            <img src="https://images.unsplash.com/photo-1558603668-6570496b66f1?q=80&w=1470&auto=format&fit=crop" alt="Fitness CRM" />
                         </div>
                         <div class="project-body">
-                            <h5 class="project-title">Fake Job Detector (NLP + ML)</h5>
-                            <p>Developed a machine learning model to classify job postings as real or fake using text data and an ensemble model (SVM + Naive Bayes). Deployed with Streamlit.</p>
+                            <h5 class="project-title">Everything Fitness — CRM & Booking Flow</h5>
+                            <p>Set up class booking calendars, membership pipelines, trial → paid conversion automations, Stripe payments, and reactivation campaigns for no‑shows.</p>
                             <div class="mb-3">
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">NLP</span>
-                                <span class="tech-badge">Scikit-learn</span>
-                                <span class="tech-badge">Streamlit</span>
+                                <span class="tech-badge">GHL</span>
+                                <span class="tech-badge">Stripe</span>
+                                <span class="tech-badge">Calendars</span>
+                                <span class="tech-badge">Reminders</span>
+                                <span class="tech-badge">Pumble</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" target="_blank"><i class="fab fa-github me-1"></i> Code</a>
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
+                                <a href="#" target="_blank"><i class="fas fa-file-alt me-1"></i> Case Study</a>
+                                <a href="#" target="_blank"><i class="fas fa-external-link-alt me-1"></i> Preview</a>
                             </div>
                         </div>
                     </div>
@@ -695,24 +336,18 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-            </div>
+            <div class="section-title"><h2>Get In Touch</h2></div>
             <div class="row">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <form class="contact-form">
                         <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
-                            </div>
+                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name" required /></div>
+                            <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email" required /></div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Subject">
+                        <input type="text" class="form-control" placeholder="Subject" />
                         <textarea class="form-control" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -720,36 +355,28 @@
                 <div class="col-lg-6">
                     <div class="contact-info">
                         <div class="d-flex align-items-center mb-4">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div>
                                 <h5>Location</h5>
-                                <p>Based in India</p>
+                                <p>Karachi, Pakistan</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <h5>Email</h5>
                                 <p>kalamshar786@gmail.com</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
                             <div>
                                 <h5>LinkedIn</h5>
                                 <p>https://www.linkedin.com/in/abdul-kalam-205579371/</p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4">
-                            <div class="contact-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
                             <div>
                                 <h5>GitHub</h5>
                                 <p>https://github.com/Azadak12</p>
@@ -771,96 +398,58 @@
     <!-- Footer -->
     <footer class="py-4">
         <div class="container">
-            <p class="mb-3">Designed & Built by Kalam Shar © 2025</p>
+            <p class="mb-3">Designed & Built by Abdul Kalam © 2025</p>
             <p class="text-muted">Made with <i class="fas fa-heart text-danger"></i> and lots of coffee</p>
         </div>
     </footer>
 
-    <!-- Back to top button -->
+    <!-- Back to top -->
     <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-            
-            // Back to top button
-            const backToTop = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
+        // Navbar scroll effect & back-to-top
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+            const backToTop = document.getElementById("backToTop");
+            backToTop.classList.toggle("active", window.scrollY > 300);
         });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                const targetId = this.getAttribute("href");
+                if (targetId === "#") return;
                 const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
+                if (!targetElement) return;
+                e.preventDefault();
+                window.scrollTo({ top: targetElement.offsetTop - 70, behavior: "smooth" });
             });
         });
-        
         // Dark mode toggle
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        darkModeToggle.addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-            const icon = this.querySelector('i');
-            if (document.body.classList.contains('dark-mode')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            }
-            
-            // Save preference to localStorage
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        darkModeToggle.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+            const icon = this.querySelector("i");
+            if (document.body.classList.contains("dark-mode")) { icon.classList.replace("fa-moon", "fa-sun"); }
+            else { icon.classList.replace("fa-sun", "fa-moon"); }
+            localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
         });
-        
-        // Check for saved dark mode preference
-        if (localStorage.getItem('darkMode') === 'true') {
-            document.body.classList.add('dark-mode');
-            const icon = darkModeToggle.querySelector('i');
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
+        if (localStorage.getItem("darkMode") === "true") {
+            document.body.classList.add("dark-mode");
+            const icon = darkModeToggle.querySelector("i");
+            icon.classList.replace("fa-moon", "fa-sun");
         }
-        
-        // Initialize animations
-        document.addEventListener('DOMContentLoaded', function() {
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            fadeElements.forEach(element => {
-                observer.observe(element);
-            });
+        // Reveal animations
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeElements = document.querySelectorAll(".fade-in");
+            const observer = new IntersectionObserver(
+                (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("active")),
+                { threshold: 0.1 }
+            );
+            fadeElements.forEach((el) => observer.observe(el));
         });
     </script>
 </body>
 </html>
-
